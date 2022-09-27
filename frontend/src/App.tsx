@@ -3,6 +3,7 @@ import './App.css';
 import axios from "axios";
 import SandwichOverview from "./components/SandwichOverview";
 import CreateSandwich from "./components/CreateSandwich";
+import {Sandwich} from "./model/Sandwich";
 
 function App() {
   // Creates a state "sandwiches" and gives us a method to change/set it
@@ -20,12 +21,7 @@ function App() {
         .then((sandwiches) => setSandwiches(sandwiches))
   }
 
-  const addSandwich = (description: string) => {
-    let newSandwich = {
-      description : description,
-      status : "OPEN"
-    }
-
+  const addSandwich = (newSandwich: Sandwich) => {
     // We use .then here to reload the sandwiches only when the get is done
     axios.post("/api/sandwich", newSandwich)
         .then(loadSandwiches) // reload sandwiches from backend

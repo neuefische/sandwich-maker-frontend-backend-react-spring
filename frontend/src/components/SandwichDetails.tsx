@@ -8,8 +8,6 @@ type SandwichDetailsProps = {
 
 export default function SandwichDetails(props: SandwichDetailsProps) {
 
-    console.log(props.sandwich)
-
     return (
         <div className={"sandwich-card"}>
             <button onClick={() => props.deleteSandwich(props.sandwich.id)}>X</button>
