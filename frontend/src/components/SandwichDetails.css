@@ -1,4 +1,29 @@
-.menu-list {
-    display: flex;
-    flex-direction: row;
+
+.sandwich-card {
+    border : 1px solid white;
+    border-radius: 5px;
+    margin: 5px;
+    text-align: left;
+    padding: 5px;
+    background: #444343;
+
+    width: 20rem;
 }
+
+.sandwich-card .name {
+    text-align: center;
+    text-decoration: underline;
+    font-weight: bolder;
+}
+
+.sandwich-card .left-side {
+    text-decoration: underline;
+    color: bisque;
+}
+
+.sandwich button {
+    color: white;
+    background: none;
+    border: none;
+}
+

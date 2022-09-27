@@ -36,6 +36,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
+        <h1>Bestellungen</h1>
 
         <SandwichOverview sandwiches={sandwiches} deleteSandwich={deleteSandwich} />
         <CreateSandwich addSandwich={addSandwich} />

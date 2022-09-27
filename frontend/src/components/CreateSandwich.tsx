@@ -20,7 +20,7 @@ export default function CreateSandwich(props: CreateSandwichProps){
 
     return (
         <div>
-            <button onClick={() => props.addSandwich(sandwich)}>Add</button>
+            <button onClick={() => props.addSandwich(sandwich)}>Bestellung hinzufügen</button>
         </div>
 
     )

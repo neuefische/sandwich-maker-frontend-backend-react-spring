@@ -1,6 +1,6 @@
 import SandwichDetails from "./SandwichDetails";
 import {Sandwich} from "../model/Sandwich";
-import "./SandwichDetails.css"
+import "./SandwichOverview.css"
 
 type SandwichOverviewProps = {
     sandwiches : Sandwich[];
