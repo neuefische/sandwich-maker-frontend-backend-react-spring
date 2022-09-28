@@ -38,6 +38,12 @@ function App() {
       <header className="App-header">
         <h1>Bestellungen</h1>
 
+        {/*
+            TODO: Füge Conditional Rendering hinzu!
+            Wenn die sandwiches Liste leer ist, soll ein Text erscheinen
+            der sagt "Bitte Bestellung hinzufügen"
+        */}
+
         <SandwichOverview sandwiches={sandwiches} deleteSandwich={deleteSandwich} />
         <CreateSandwich addSandwich={addSandwich} />
 
