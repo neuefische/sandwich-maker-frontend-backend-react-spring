@@ -4,10 +4,10 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class SandwitchMakerApplication {
+public class SandwichMakerApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(SandwitchMakerApplication.class, args);
+        SpringApplication.run(SandwichMakerApplication.class, args);
     }
 
 }
