@@ -1,0 +1,12 @@
+form {
+    border: 5px groove #e7d542;
+}
+
+input {
+    padding: 10px;
+    margin: 0 0 3% 3%;
+}
+
+label {
+    font-weight: bolder;
+}
