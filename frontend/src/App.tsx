@@ -22,9 +22,14 @@ function App() {
     }
 
     const addSandwich = (newSandwich: Sandwich) => {
+        console.log(newSandwich)
+
         // We use .then here to reload the sandwiches only when the get is done
         axios.post("/api/sandwich", newSandwich)
             .then(loadSandwiches) // reload sandwiches from backend
+            .catch((errorFromBackend) => {
+                console.log("ALARM", errorFromBackend)
+            })
     }
 
     const deleteSandwich = (id: string) => {
