@@ -27,12 +27,15 @@ public class SandwichService {
 
     public Sandwich saveNewSandwich(SandwichDTO sandwich) {
         Sandwich newSandwich = Sandwich.builder()
+                // Ein Service der eine ID generiert
                 .id(idService.generateID())
+                // Was wir übernehmen
                 .name(sandwich.getName())
                 .patty(sandwich.getPatty())
                 .numberOfPatties(sandwich.getNumberOfPatties())
                 .isGrilled(sandwich.isGrilled())
                 .extraWishes(sandwich.getExtraWishes())
+                // Das bauen wir
                 .build();
 
         return sandwichRepository.saveSandwich(newSandwich);
