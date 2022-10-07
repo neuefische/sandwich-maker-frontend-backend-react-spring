@@ -10,7 +10,6 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @Builder
 public class Sandwich {
-
     private String id;
     private String name;
     private String patty;

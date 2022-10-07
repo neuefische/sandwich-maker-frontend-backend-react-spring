@@ -26,8 +26,8 @@ public class SandwichController {
     }
 
     @PostMapping
-    public Sandwich saveSandwich(@RequestBody SandwichDTO todo) {
-        return sandwichService.saveNewSandwich(todo);
+    public Sandwich saveSandwich(@RequestBody SandwichDTO sandwichDTO) {
+        return sandwichService.saveNewSandwich(sandwichDTO);
     }
 
     @GetMapping(path = "/{id}")
@@ -36,8 +36,8 @@ public class SandwichController {
     }
 
     @PutMapping(path = "/{id}")
-    public Sandwich updateTodo(@PathVariable String id, @RequestBody Sandwich todo) {
-        return sandwichService.updateSandwich(todo);
+    public Sandwich updateTodo(@PathVariable String id, @RequestBody Sandwich sandwichToUpdate) {
+        return sandwichService.updateSandwich(sandwichToUpdate);
     }
 
     @DeleteMapping(path = "/{id}")
