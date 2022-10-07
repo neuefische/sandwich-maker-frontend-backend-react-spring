@@ -11,8 +11,8 @@
     <groupId>de.grilborzer.neuefische</groupId>
     <artifactId>sandwitch-maker</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>sandwitch-maker</name>
-    <description>sandwitch-maker</description>
+    <name>sandwich-maker</name>
+    <description>sandwich-maker</description>
     <properties>
         <java.version>17</java.version>
     </properties>
