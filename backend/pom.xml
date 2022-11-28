@@ -9,13 +9,14 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>de.grilborzer.neuefische</groupId>
-    <artifactId>sandwitch-maker</artifactId>
+    <artifactId>sandwich-maker</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>sandwich-maker</name>
     <description>sandwich-maker</description>
     <properties>
         <java.version>17</java.version>
     </properties>
+
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -49,6 +50,8 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
+                    <skip>true</skip>
+
                     <excludes>
                         <exclude>
                             <groupId>org.projectlombok</groupId>
@@ -56,6 +59,12 @@
                         </exclude>
                     </excludes>
                 </configuration>
+
+                <executions>
+                    <execution>
+                        <phase>none</phase>
+                    </execution>
+                </executions>
             </plugin>
         </plugins>
     </build>
