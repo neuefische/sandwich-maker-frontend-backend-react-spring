@@ -4,7 +4,7 @@ WORKDIR /app
 
 COPY /backend/.mvn .mvn
 COPY /backend/mvnw /backend/pom.xml ./
-RUN mvn package -f pom.xml
+RUN mvn -B package -f pom.xml
 
 COPY . ./app
 
