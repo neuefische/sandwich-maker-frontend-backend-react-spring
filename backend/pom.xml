@@ -45,6 +45,8 @@
     </dependencies>
 
     <build>
+        <finalName>sandwich_maker</finalName>
+
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>

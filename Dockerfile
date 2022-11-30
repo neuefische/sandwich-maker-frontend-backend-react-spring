@@ -1,16 +1,11 @@
-FROM maven:3.8.3-openjdk-17 AS build
+FROM openjdk:19
 
-WORKDIR /app
+ENV ENVIROMENT=prod
 
-COPY /backend/.mvn .mvn
-COPY /backend/mvnw /backend/pom.xml ./
-RUN mvn -B package -f pom.xml
+MAINTAINER Sergej Grilborzer <sergej.grilborzer@neuefische.de>
 
-COPY . ./app
+EXPOSE 8080
 
-ENTRYPOINT ["java","-jar","/app/target/sandwich-maker-0-0.1.jar"]
+ADD backend/target/sandwich_maker.jar sandwich_maker.jar
 
-#FROM eclipse-temurin:17-jdk-focal
-#COPY --from=build /home/app/target/sandwich-maker-0.0.1.jar /usr/local/lib/sandwichshop.jar
-#EXPOSE 8080
-#ENTRYPOINT ["java","-jar","/usr/local/lib/sandwichshop.jar"]
+CMD [ "sh", "-c", "java -jar /sandwich_maker.jar" ]
